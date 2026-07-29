@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #1f1d1d;
+  --nav-color: #141313;
+  --primary-color: #00a2ff;
+  --text-color: #ffffff;
+  --secondary-text: #b3b3b3;
+  --input-bg: #2d2d2d;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--nav-color);
+
+  padding: 20px 40px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logoimg {
+  width: 32px;
+  height: 32px;
+}
+
+#logotext {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#links a {
+  color: var(--secondary-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#links a:hover {
+  color: var(--text-color);
+}
+
+#download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#inputSearch {
+  width: 230px;
+  padding: 10px 15px;
+
+  background-color: var(--input-bg);
+  color: var(--text-color);
+
+  border: 1px solid #555;
+  border-radius: 6px;
+  outline: none;
+}
+
+#inputSearch::placeholder {
+  color: #aaaaaa;
+}
+
+#downloadBtn {
+  background-color: var(--primary-color);
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 10px 18px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+#downloadBtn:hover {
+  background-color: #0088d8;
+}
+
+#main {
+  max-width: 1200px;
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  padding: 20px;
+}
+
+#tagline1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+}
+
+#tagline2 {
+  margin-top: 15px;
+
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  color: var(--secondary-text);
+}
+
+#usagediv {
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#installBtn {
+  display: flex;
+  gap: 15px;
+}
+
+#ubuntuBtn,
+#windowsBtn {
+  background-color: white;
+  color: black;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 12px 18px;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: background-color 0.3s ease;
+}
+
+#ubuntuBtn:hover,
+#windowsBtn:hover {
+  background-color: #dddddd;
+}
+
+#para1,
+#para2 {
+  color: var(--secondary-text);
+}
+
+#para1 a,
+#para2 a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+#para1 a:hover,
+#para2 a:hover {
+  text-decoration: underline;
+}
+
+#imgdiv {
+  display: inline-block;
+  background-color: rgb(0, 162, 255);
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+#vscodeimg {
+  margin: 30px;
+}
+
+@media (max-width: 900px) {
+  #navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #download {
+    flex-direction: column;
+  }
+
+  #installBtn {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #ubuntuBtn,
+  #windowsBtn {
+    width: 100%;
+  }
+
+  #inputSearch {
+    width: 100%;
+  }
+}
