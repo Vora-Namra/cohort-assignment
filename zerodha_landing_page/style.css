@@ -1,0 +1,66 @@
+body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#header{
+    margin: 10px;
+    display: flex;
+}
+
+#zerodha_logo{
+    width:16vw;
+    height: 5vh;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+ul{
+      list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(69, 138, 228);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header_link{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    text-decoration: none;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 100px;
+
+
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main img{
+    width: 60%;
+}
+
+h4{
+    color: rgba(43, 42, 42, 0.644);
+}
+
+h2{
+    color: rgba(43, 42, 42, 0.77);
+
+}
+#btn{
+ cursor: pointer;
+ padding: 20px 20px ;
+ border-radius: 8px;
+ border-color: white;
+ background-color:rgb(66, 158, 192);
+color: white;
+font-size: 16px;
+}

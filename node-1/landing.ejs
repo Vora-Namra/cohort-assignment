@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to X</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white h-screen flex">
+
+  <!-- LEFT SIDE -->
+  <div class="hidden md:flex w-1/2 items-center justify-center">
+    <h1 class="text-[200px] font-bold text-gray-300">X</h1>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="w-full md:w-1/2 flex flex-col justify-center px-10 md:px-20">
+
+    <!-- Heading -->
+    <h1 class="text-6xl font-bold mb-10">Happening now</h1>
+
+    <h2 class="text-3xl font-bold mb-6">Join today.</h2>
+
+    <!-- Buttons -->
+    <div class="space-y-4 w-full max-w-sm">
+
+
+
+      <!-- Create Account -->
+      <a href="/signup">
+        <button class="w-full bg-white text-black py-3 rounded-full font-semibold hover:bg-gray-200">
+          Create account
+        </button>
+      </a>
+
+      <!-- Terms -->
+      <p class="text-xs text-gray-400 mt-2">
+        By signing up, you agree to the 
+        <span class="text-blue-400">Terms of Service</span> and 
+        <span class="text-blue-400">Privacy Policy</span>.
+      </p>
+
+      <!-- Login Section -->
+      <div class="mt-10">
+        <p class="mb-3 text-lg">Already have an account?</p>
+
+        <a href="/login">
+          <button class="w-full border border-gray-600 py-3 rounded-full font-semibold hover:bg-gray-900">
+            Sign in
+          </button>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
